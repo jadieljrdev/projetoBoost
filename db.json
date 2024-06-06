@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Implementar nova funcionalidade",
+      "priority": "Alta",
+      "description": "Desenvolver e integrar a nova funcionalidade solicitada pelo cliente."
+    },
+    {
+      "id": 2,
+      "title": "Corrigir bugs no sistema",
+      "priority": "Média",
+      "description": "Identificar e corrigir os bugs reportados pelos usuários."
+    },
+    {
+      "id": 3,
+      "title": "Atualizar documentação",
+      "priority": "Baixa",
+      "description": "Revisar e atualizar a documentação do projeto para refletir as mudanças recentes."
+    },
+    {
+      "id": 4,
+      "title": "Reunião com a equipe",
+      "priority": "Alta",
+      "description": "Organizar e conduzir a reunião semanal com a equipe de desenvolvimento."
+    },
+    {
+      "id": 5,
+      "title": "Analisar feedback dos usuários",
+      "priority": "Média",
+      "description": "Revisar o feedback dos usuários e identificar áreas de melhoria."
+    }
+  ]
+}
