@@ -1,39 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="base/global.css">
-</head>
-<body>
-    <form>
-        <div>
-            <label for="">Título</label>
-            <input type="text" name="" id="">
-        </div>
-        <div>
-        <label for="">Prioridade</label>
-            <select name="" id="">
-                <option value="alta">Alta</option>
-                <option value="média">Média</option>
-                <option value="baixa">Baixa</option>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="assets/base/global.css" />
+  </head>
+  <body>
+    <div class="container__desktop">
+      <form class="form">
+        <div class="form__info--row">
+          <fieldset class="form__info--column">
+            <label for="title">Título</label>
+            <input
+              type="text"
+              placeholder="Levar o carro para revisão"
+              class="container__input"
+              id="title"
+            />
+          </fieldset>
+          <fieldset class="form__info--column">
+            <label for="priority">Prioridade</label>
+            <select class="container__input" id="priority">
+              <option value="alta">Alta</option>
+              <option value="media">Média</option>
+              <option value="baixa">Baixa</option>
             </select>
-        </div>
-        <div>
-            <label for="">Descrição</label>
-            <textarea name="" id=""></textarea>
+          </fieldset>
         </div>
 
-        <div>
-            <button>Limpar</button>
-            <button>Adicionar</button>
-        </div>
-    </form>
-    <h2>Tarefas</h2>
-    <section id="containerTasks">
-        <!-- Aqui vai a lista de tarefas -->
-    </section>
-    <script src="js/listarTarefasNaTela.js" type="module"></script>
-</body>
+        <fieldset class="form__info--column container__textarea">
+          <label for="description">Descrição</label>
+          <textarea
+            placeholder="Oficina XYZ para revisão completa e relatar barulho estranho na embreagem."
+            class="container__input container__input--textarea"
+            id="description"
+          ></textarea>
+        </fieldset>
+
+        <fieldset class="container__buttons">
+          <button class="form__button" id="clearButton">Limpar</button>
+          <button
+            class="form__button form__button--dark"
+            id="addButton"
+            type="submit"
+          >
+            Adicionar
+          </button>
+        </fieldset>
+      </form>
+
+      <main class="main__taskList">
+        <h2 class="main__taskList--title">Tarefas</h2>
+
+        <ul id="taskList" class="taskList">
+          <li class="taskList__task">
+            <div class="task__priority">Alta</div>
+            <div class="task__title">Aula de inglês</div>
+            <div class="task__description">English class about: "Do you know what brainstorming is?"</div>
+            <button class="task__delete" type="button">
+              <img src="assets/icons/trash-icon.svg" alt="Ícone de lixeira, para deletar a tarefa.">
+            </button>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
 </html>
