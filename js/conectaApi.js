@@ -1,7 +1,11 @@
 const ENDPOINTAPI = 'http://localhost:3000/tasks'
 
-export async function buscarTarefas(){
-    const resposta = await fetch(ENDPOINTAPI)
-    const respostaConvertida = await resposta.json()
-    return respostaConvertida
+export async function listTask(){
+    const response = await fetch(ENDPOINTAPI)
+    const responseConvert = await response.json()
+    return responseConvert
+}
+
+export const conectaApi = {
+    listTask
 }
